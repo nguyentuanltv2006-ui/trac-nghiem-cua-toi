@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="20 câu hỏi trắc nghiệm Câu lạc bộ Lý luận trẻ tháng 7/2026 – Phát huy giá trị văn hóa Bộ đội Cụ Hồ thời kỳ mới.">
+<title>Trắc nghiệm CLB Lý luận trẻ – Tháng 7/2026</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c2b3e;background:#f3f6fa;font-synthesis:none}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(150deg,#eaf1fb 0,#f6f8fc 48%,#eef4fa 100%)}
+button{font:inherit}button:focus-visible{outline:3px solid #80afff;outline-offset:3px}
+.topbar{background:#17385b;color:#fff;padding:15px clamp(18px,4vw,44px);display:flex;align-items:center;gap:12px}
+.logo{font-weight:900;background:#e7b767;color:#17385b;border-radius:10px;min-width:42px;height:42px;display:grid;place-items:center;font-size:18px}
+.brand{font-weight:700;font-size:14px;line-height:1.5;letter-spacing:.02em}.brand small{display:block;color:#c8dcf4;font-weight:400;font-size:12px}
+.wrap{width:min(100%,850px);margin:0 auto;padding:34px 18px 48px}
+.panel{background:#fff;border:1px solid #e2e9f2;border-radius:22px;padding:clamp(23px,5vw,45px);box-shadow:0 12px 40px #29486d13}
+.eyebrow{color:#315f96;font-size:12px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;margin:0 0 12px}
+h1{font-size:clamp(26px,4vw,39px);line-height:1.24;letter-spacing:-.03em;margin:0 0 14px;color:#163456}
+h2{color:#163456;line-height:1.35}.sub{color:#576a83;line-height:1.7;margin:0 0 22px;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}.tag{background:#edf4fc;border-radius:100px;padding:9px 13px;color:#315f96;font-size:13px;font-weight:700}
+.mode-title{font-weight:800;margin:14px 0 12px}.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mode{border:2px solid #dce5f1;border-radius:13px;padding:14px;text-align:left;background:#fff;cursor:pointer;color:#24425f}
+.mode strong{display:block;font-size:15px;margin-bottom:4px}.mode span{color:#657892;line-height:1.45;font-size:13px;display:block}.mode[aria-pressed=true]{background:#edf5ff;border-color:#2f75cb}
+.primary{background:#1f64b3;color:white;border:0;padding:14px 25px;border-radius:12px;cursor:pointer;font-weight:800;min-height:47px}
+.primary:hover{background:#174e8d}.secondary{background:#f0f4fa;border:1px solid #d8e2ef;color:#254363;padding:13px 19px;border-radius:12px;cursor:pointer;font-weight:750;min-height:45px}
+.secondary:hover{background:#e6eef8}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:25px}
+.note{color:#6b7e93;font-size:12px;line-height:1.6;margin-top:22px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:13px;flex-wrap:wrap}
+.badge{display:inline-block;color:#245887;background:#edf4fc;font-size:13px;font-weight:800;padding:7px 12px;border-radius:100px}
+.muted{color:#6a7c92;font-size:13px;font-weight:700}.progress{height:9px;border-radius:99px;background:#e6ecf4;overflow:hidden;margin-bottom:27px}
+.progress-inner{height:100%;width:0;background:linear-gradient(90deg,#2772c8,#37a3ca);transition:width .2s}
+.question{font-size:clamp(20px,2.8vw,25px);line-height:1.5;font-weight:800;margin:0 0 22px;color:#1d3653}
+.option{display:flex;align-items:flex-start;gap:14px;width:100%;border:1.5px solid #dce4ee;border-radius:13px;padding:15px 16px;margin:0 0 11px;background:#fff;text-align:left;cursor:pointer;color:#263b50;line-height:1.55;transition:border-color .12s,background .12s}
+.option:hover:not(:disabled){background:#f4f8fe;border-color:#7aace6}
+.option .letter{background:#eef3fa;color:#35638f;display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:9px;font-size:14px;font-weight:850}
+.option .txt{padding-top:2px;flex:1}.option.selected{border-color:#2e72c0;background:#eef5ff}.option.selected .letter{background:#2e72c0;color:#fff}
+.option.correct{border-color:#27915a;background:#ebfaf2}.option.correct .letter{background:#27915a;color:#fff}
+.option.wrong{border-color:#d86363;background:#fff1f1}.option.wrong .letter{background:#d86363;color:#fff}
+.option:disabled{cursor:default}
+.feedback{font-weight:750;line-height:1.5;padding:12px 15px;border-radius:12px;background:#f0f4f9;color:#36506d;margin:12px 0 0}
+.feedback.good{background:#e6f7ee;color:#196c40}.feedback.bad{background:#fff0f0;color:#a23838}
+.result-score{font-size:clamp(44px,9vw,64px);font-weight:900;color:#195b9e;margin:14px 0 4px}
+.result-sub{color:#576b81;margin:0 0 26px}.review{margin-top:32px;border-top:1px solid #e4ebf3;padding-top:24px}
+.review h3{color:#1d3653}.review-item{padding:16px 0;border-bottom:1px solid #e8eef6;line-height:1.6}
+.review-item .qname{font-weight:800;color:#21384e;margin-bottom:7px}.review-item .status{font-size:13px;font-weight:750}
+.ok{color:#187344}.no{color:#bd4545}.answer-detail{font-size:14px;color:#48617b;margin-top:4px}
+.footer{text-align:center;color:#8291a3;font-size:12px;padding:18px 20px 28px}
+[hidden]{display:none!important}
+@media(max-width:560px){.wrap{padding:18px 10px 30px}.panel{padding:23px 18px;border-radius:16px}.modes{grid-template-columns:1fr}.option{padding:12px 11px}.topbar{padding:11px 18px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="logo" aria-hidden="true">LLT</div><div class="brand">CÂU LẠC BỘ LÝ LUẬN TRẺ<small>Hệ thống ôn tập trắc nghiệm • Tháng 7/2026</small></div></header>
+<div class="wrap"><main class="panel">
+<section id="welcome">
+  <p class="eyebrow">Bộ câu hỏi ôn tập • 2026</p>
+  <h1>Phát huy giá trị văn hóa “Bộ đội Cụ Hồ” thời kỳ mới</h1>
+  <p class="sub">Bài ôn tập dành cho học viên Khóa 29 SQPĐ. Nội dung và đáp án được chuyển từ tài liệu <strong>Câu hỏi trắc nghiệm Câu lạc bộ Lý luận trẻ tháng 7/2026</strong>.</p>
+  <div class="tags"><span class="tag">20 câu hỏi</span><span class="tag">4 phương án A–D</span><span class="tag">Chấm điểm tự động</span></div>
+  <p class="mode-title">Chọn hình thức làm bài</p>
+  <div class="modes">
+    <button type="button" class="mode" id="practice-mode" aria-pressed="true"><strong>Ôn tập</strong><span>Chọn đáp án và biết đúng/sai ngay sau mỗi câu.</span></button>
+    <button type="button" class="mode" id="exam-mode" aria-pressed="false"><strong>Tự kiểm tra</strong><span>Làm hết 20 câu rồi mới xem điểm và đáp án.</span></button>
+  </div>
+  <div class="actions"><button type="button" class="primary" id="start">Bắt đầu làm bài →</button></div>
+  <p class="note">Trang hoạt động trực tiếp trên máy tính và điện thoại, không cần đăng nhập để làm bài. Kết quả chỉ hiển thị trên thiết bị đang sử dụng.</p>
+</section>
+<section id="quiz" hidden>
+  <div class="row"><span class="badge" id="counter">Câu 1 / 20</span><span class="muted" id="mode-label"></span></div>
+  <div class="progress" role="progressbar" aria-label="Tiến độ làm bài" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" id="progress"><div class="progress-inner" id="progress-inner"></div></div>
+  <h2 class="question" id="question"></h2>
+  <div id="options" role="group" aria-label="Chọn đáp án"></div>
+  <div id="feedback" class="feedback" role="status" hidden></div>
+  <div class="actions"><button class="secondary" type="button" id="prev">← Câu trước</button><button class="primary" type="button" id="next">Câu tiếp theo →</button></div>
+</section>
+<section id="result" hidden>
+  <p class="eyebrow">Kết quả bài làm</p><h1>Đã hoàn thành 20 câu hỏi</h1>
+  <div class="result-score" id="score"></div><p class="result-sub" id="score-text"></p>
+  <div class="actions"><button type="button" class="primary" id="retry">Làm lại bài</button><button type="button" class="secondary" id="home">Về trang đầu</button></div>
+  <div class="review"><h2>Đối chiếu đáp án</h2><p class="sub">Các đáp án dưới đây được lấy từ bảng đáp án của tài liệu gốc.</p><div id="review-list"></div></div>
+</section>
+</main></div>
+<footer class="footer">Bộ câu hỏi CLB Lý luận trẻ tháng 7/2026 • Tài liệu do người dùng cung cấp</footer>
+<script>
+// ===== NGÂN HÀNG CÂU HỎI TỪ TÀI LIỆU WORD CỦA BẠN =====
+// answer: 0 = A; 1 = B; 2 = C; 3 = D.
+const questions = [{"question":"Chuyên đề sinh hoạt Câu lạc bộ Lý luận trẻ tháng 7/2026 được xây dựng gắn với văn bản nào sau đây?","options":["Nghị quyết số 847-NQ/QUTW ngày 28/12/2021 về phát huy phẩm chất “Bộ đội Cụ Hồ”","Chỉ thị số 676-CT/QUTW ngày 20/6/2026 về phát huy giá trị văn hóa “Bộ đội Cụ Hồ” thời kỳ mới","Chỉ thị số 2423-CT/QUTW ngày 09/11/2023 về đổi mới giáo dục chính trị","Kế hoạch thi đua Quyết thắng tháng 5/2026"],"answer":1},{"question":"Giá trị văn hóa “Bộ đội Cụ Hồ” được hiểu là:","options":["Những quy định về trang phục và lễ tiết quân nhân","Những thành tích trong các kỳ hội thao quân sự","Hệ thống phẩm chất tốt đẹp về chính trị, đạo đức, lối sống, phong cách và hành vi của quân nhân cách mạng","Những hoạt động văn nghệ, thể dục thể thao tại đơn vị"],"answer":2},{"question":"Đặc trưng quan trọng hàng đầu của giá trị văn hóa “Bộ đội Cụ Hồ” là:","options":["Giỏi ứng dụng công nghệ thông tin","Tích cực tham gia hoạt động tập thể","Không ngừng cải tiến phương pháp học tập","Tuyệt đối trung thành với Tổ quốc, với Đảng, Nhà nước và Nhân dân"],"answer":3},{"question":"Biểu hiện phù hợp của tinh thần dũng cảm, kiên cường ở học viên Khóa 29 cuối khóa là:","options":["Kiên trì khắc phục nội dung còn yếu, hoàn thành ôn tập, kiểm tra và chấp hành quy định an toàn","Chỉ tập trung vào các nội dung mình đã thành thạo","Bỏ qua nội dung khó vì sắp tốt nghiệp","Đề nghị giảm yêu cầu rèn luyện trong thời gian cuối khóa"],"answer":0},{"question":"Việc làm nào thể hiện đạo đức trong sáng, lối sống giản dị của học viên?","options":["Đặt kết quả cá nhân lên trên lợi ích tập thể","Trung thực trong kiểm tra, tiết kiệm, nhận trách nhiệm khi có thiếu sót","Giữ thành tích bằng mọi cách để được đánh giá tốt","Đùn đẩy việc bàn giao vật chất cho đồng chí khác"],"answer":1},{"question":"Mối quan hệ đúng giữa dân chủ, kỷ luật và sáng tạo trong Quân đội là:","options":["Phát huy dân chủ có nghĩa là được tự ý thay đổi chế độ, quy định","Chỉ cần sáng tạo, không cần thống nhất trong tập thể","Phát huy dân chủ đúng nguyên tắc, giữ nghiêm kỷ luật và chủ động đổi mới phương pháp","Chỉ chấp hành kỷ luật khi có cán bộ giám sát"],"answer":2},{"question":"Đối với học viên Khóa 29 chuẩn bị ra trường, tình đồng chí, đồng đội thể hiện rõ nhất ở:","options":["Chỉ quan tâm đến kết quả tốt nghiệp của bản thân","So sánh, hơn thua về nơi công tác sau ra trường","Hạn chế tham gia sinh hoạt tập thể cuối khóa","Chân thành hỗ trợ ôn tập, động viên đồng đội và giữ gìn đoàn kết khi chia tay"],"answer":3},{"question":"Vì sao cần tiếp tục phát huy giá trị văn hóa “Bộ đội Cụ Hồ” trong thời kỳ mới?","options":["Để đáp ứng yêu cầu xây dựng Quân đội hiện đại, đồng thời giữ vững phẩm chất, kỷ luật và bản lĩnh","Để thay thế hoàn toàn công tác huấn luyện chuyên môn","Để giảm trách nhiệm tự rèn luyện của quân nhân","Để chỉ chú trọng các hoạt động văn hóa, văn nghệ"],"answer":0},{"question":"Nội dung nào sau đây KHÔNG thuộc năm nội dung cơ bản được trình bày ở phần II của đề cương?","options":["Xây dựng bản lĩnh chính trị kiên định, vững vàng","Tập trung tăng quân số, mở rộng biên chế bằng mọi cách","Tăng cường tu dưỡng đạo đức, lối sống và ý thức tổ chức kỷ luật","Xây dựng môi trường văn hóa quân sự tốt đẹp, lành mạnh"],"answer":1},{"question":"Khi được phân công công tác tại địa bàn xa gia đình, học viên năm cuối cần:","options":["Chủ động chuẩn bị tư tưởng, sẵn sàng chấp hành phân công và hoàn thành nhiệm vụ","Chỉ nhận nhiệm vụ khi đúng nguyện vọng cá nhân","Chia sẻ ngay các thông tin chưa kiểm chứng về nơi nhận công tác","Tạm ngừng ôn tập để chờ thông báo phân công"],"answer":0},{"question":"Thực hiện “tự soi, tự sửa” trong thời gian cuối khóa được hiểu là:","options":["Chỉ nhận xét khuyết điểm của đồng đội","Tự đánh giá, nhận ra hạn chế và chủ động khắc phục trong học tập, rèn luyện","Chỉ sửa chữa khi đã có quyết định xử lý kỷ luật","Bỏ qua thiếu sót nhỏ do sắp tốt nghiệp"],"answer":1},{"question":"Để nâng cao năng lực toàn diện trước khi ra trường, học viên SQPĐ cần:","options":["Chỉ học các phần lý thuyết đã nắm chắc","Chỉ chú ý rèn luyện thể lực, không cần phương pháp công tác","Củng cố kiến thức công binh, rèn kỹ năng quản lý, chỉ huy và tự học, đổi mới sáng tạo","Tập trung vào điểm số mà không cần khả năng tổ chức thực tiễn"],"answer":2},{"question":"Khi khai thác tài liệu và phương tiện số phục vụ ôn tập cuối khóa, học viên phải:","options":["Sử dụng mọi nguồn tài liệu không cần kiểm chứng","Công khai tài liệu nội bộ lên mạng xã hội để tiện trao đổi","Phụ thuộc hoàn toàn vào công cụ số, không tự nghiên cứu","Sử dụng công cụ được phép, bảo đảm an toàn, đúng quy định về bảo mật"],"answer":3},{"question":"Nội dung nào góp phần xây dựng môi trường văn hóa quân sự lành mạnh tại Đại đội 6B?","options":["Giữ gìn cảnh quan, nền nếp chính quy; xây dựng quan hệ đúng mực và hoạt động Phòng Hồ Chí Minh","Chỉ chăm lo trang trí doanh trại mà không quan tâm quan hệ đồng đội","Giảm các hoạt động giáo dục truyền thống và sinh hoạt tập thể","Không cần bảo quản cơ sở vật chất trong giai đoạn chuẩn bị tốt nghiệp"],"answer":0},{"question":"Theo định hướng trong đề cương, việc triển khai Chỉ thị 676-CT/QUTW cần:","options":["Chỉ tiến hành trong một buổi học tập tập trung","Gắn với hành động hằng ngày, trách nhiệm nêu gương và đánh giá thực chất kết quả rèn luyện","Chỉ đánh giá qua số lượng khẩu hiệu, bảng biểu được treo","Giao hoàn toàn cho các tổ chức đoàn, không cần cán bộ chỉ huy"],"answer":1},{"question":"Kết hợp giữa “xây” và “chống” trong phát huy giá trị văn hóa “Bộ đội Cụ Hồ” là:","options":["Chỉ xử lý vi phạm, không cần xây dựng tấm gương tích cực","Chỉ tuyên truyền thành tích, bỏ qua thiếu sót","Bồi dưỡng phẩm chất tốt đẹp đồng thời phòng ngừa, chấn chỉnh biểu hiện thiếu trách nhiệm, vi phạm","Chờ đến cuối năm mới tổ chức nhận xét, rút kinh nghiệm"],"answer":2},{"question":"Để chuẩn bị đảm nhiệm chức trách cán bộ phân đội sau tốt nghiệp, học viên Khóa 29 cần chú trọng:","options":["Chỉ nắm chắc lý thuyết chuyên ngành","Đặt mong muốn cá nhân lên trên nhiệm vụ tập thể","Hạn chế tiếp thu góp ý từ cán bộ, giáo viên","Rèn phương pháp xây dựng kế hoạch, giao nhiệm vụ, kiểm tra và tổ chức thực hiện"],"answer":3},{"question":"Thái độ đúng khi đã hoàn thành phần lớn chương trình đào tạo nhưng chưa tốt nghiệp là:","options":["Tiếp tục duy trì nghiêm chế độ, kỷ luật, ôn tập và rèn luyện, không chủ quan","Có thể nới lỏng giờ giấc sinh hoạt và quản lý nội vụ","Chỉ thực hiện nhiệm vụ khi có nhắc nhở","Tạm dừng hoạt động tập thể để chờ ra trường"],"answer":0},{"question":"Hoạt động nào phù hợp để bồi đắp tình đồng chí, đồng đội cho học viên Khóa 29 trước khi ra trường?","options":["Chỉ tổ chức bình xét thành tích cá nhân","Sinh hoạt cuối khóa, chia sẻ kinh nghiệm công tác, giúp nhau hoàn thành phần việc còn lại","Thảo luận để so sánh mức độ thuận lợi của nơi nhận công tác","Không cần duy trì hoạt động đoàn và giáo dục truyền thống"],"answer":1},{"question":"Mục tiêu thực hiện chuyên đề đối với học viên Khóa 29 SQPĐ tháng 7/2026 là:","options":["Chỉ đạt kết quả cao ở một số nội dung kiểm tra","Ưu tiên nguyện vọng nơi công tác hơn chấp hành tổ chức","Hoàn thành tốt đào tạo, giữ vững phẩm chất, kỷ luật, đoàn kết và sẵn sàng nhận nhiệm vụ mới","Giảm yêu cầu rèn luyện trong giai đoạn cuối khóa"],"answer":2}];
+// ===== KẾT THÚC NGÂN HÀNG CÂU HỎI =====
+const $ = (id)=>document.getElementById(id);
+let mode = 'practice';
+let index = 0;
+let picks = Array(questions.length).fill(null);
+const letter = (i)=> String.fromCharCode(65+i);
+function display(section){ ['welcome','quiz','result'].forEach(s=>$(s).hidden=s!==section); window.scrollTo(0,0); }
+function setMode(value){ mode=value; $('practice-mode').setAttribute('aria-pressed', String(mode==='practice')); $('exam-mode').setAttribute('aria-pressed',String(mode==='exam')); }
+function begin(){ index=0; picks=Array(questions.length).fill(null); display('quiz'); render(); }
+function render(){
+  const q=questions[index], selected=picks[index];
+  $('counter').textContent=`Câu ${index+1} / ${questions.length}`;
+  $('mode-label').textContent=mode==='practice'?'Chế độ ôn tập':'Chế độ tự kiểm tra';
+  $('progress').setAttribute('aria-valuenow',String(index+1));
+  $('progress-inner').style.width = `${(index+1)/questions.length*100}%`;
+  $('question').textContent=q.question;
+  $('options').replaceChildren();
+  q.options.forEach((answer,i)=>{
+    const button=document.createElement('button');button.type='button';button.className='option';
+    const key=document.createElement('span');key.className='letter';key.textContent=letter(i);
+    const txt=document.createElement('span');txt.className='txt';txt.textContent=answer;
+    button.append(key,txt);
+    if(selected!==null && selected===i) button.classList.add('selected');
+    if(mode==='practice' && selected!==null){
+      button.disabled=true;
+      if(i===q.answer) button.classList.add('correct');
+      else if(selected===i) button.classList.add('wrong');
+    }
+    button.addEventListener('click',()=>selectAnswer(i));$('options').appendChild(button);
+  });
+  $('feedback').hidden = !(mode==='practice' && selected!==null);
+  if(mode==='practice' && selected!==null){
+    const correct= selected===q.answer;
+    $('feedback').textContent= correct ? 'Chính xác! Bạn đã chọn đúng.' : `Chưa đúng. Đáp án đúng là ${letter(q.answer)}. ${q.options[q.answer]}`;
+    $('feedback').className=correct?'feedback good':'feedback bad';
+  }
+  $('prev').disabled=index===0;
+  $('prev').style.opacity=index===0?'.5':'1';
+  $('next').textContent = index===questions.length-1 ? 'Nộp bài và xem kết quả →' : 'Câu tiếp theo →';
+}
+function selectAnswer(choice){
+  if(mode==='practice' && picks[index]!==null) return;
+  picks[index]=choice; render();
+}
+function next(){
+  if(picks[index]===null){alert('Bạn hãy chọn một đáp án trước khi tiếp tục.');return;}
+  if(index<questions.length-1){index++;render();}
+  else finish();
+}
+function finish(){
+  const correctCount=picks.reduce((sum,choice,i)=>sum+(choice===questions[i].answer?1:0),0);
+  $('score').textContent=`${correctCount} / ${questions.length}`;
+  $('score-text').textContent=`Số câu đúng: ${correctCount}; số câu chưa đúng: ${questions.length-correctCount}.`;
+  $('review-list').replaceChildren();
+  questions.forEach((q,i)=>{
+    const row=document.createElement('div');row.className='review-item';
+    const title=document.createElement('div'); title.className='qname'; title.textContent=`Câu ${i+1}. ${q.question}`;
+    const status=document.createElement('div'); status.className='status '+(picks[i]===q.answer?'ok':'no');
+    status.textContent=`Bạn chọn: ${picks[i]===null?'Chưa trả lời':letter(picks[i])} • ${picks[i]===q.answer?'Đúng':'Chưa đúng'}`;
+    const detail=document.createElement('div'); detail.className='answer-detail';detail.textContent=`Đáp án đúng: ${letter(q.answer)}. ${q.options[q.answer]}`;
+    row.append(title,status,detail);$('review-list').appendChild(row);
+  });
+  display('result');
+}
+$('practice-mode').addEventListener('click',()=>setMode('practice'));
+$('exam-mode').addEventListener('click',()=>setMode('exam'));
+$('start').addEventListener('click',begin);
+$('prev').addEventListener('click',()=>{if(index>0){index--;render();}});
+$('next').addEventListener('click',next);
+$('retry').addEventListener('click',begin);
+$('home').addEventListener('click',()=>display('welcome'));
+</script>
+</body>
+</html>
